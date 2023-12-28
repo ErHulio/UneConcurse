@@ -1,0 +1,87 @@
+#visible_layout {
+    background-color: inherit;
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+#visual_aid {
+    height: 69%;
+}
+
+#qna {
+    background-color: rgba(0, 139, 139, 0.9);
+    height: 30%;
+}
+
+#question_placeholder {
+    width: inherit;
+    height: 30%;
+    line-height: 180%;
+    font-size: 2.5vw;
+    margin: 0%;
+    padding-left: 1.5%;
+}
+
+#answers_top_division, #answers_bottom_division {
+    display: flex;
+    justify-content: center;
+    width: inherit;
+    height: 30%;
+}
+
+.answer_placeholder {
+    display: inline-block;
+    width: 47%;
+    height: 90%;
+    margin: 0.5%;
+}
+
+.answer_placeholder * {
+    display:flexbox;
+    margin-left: -100%;
+    vertical-align: middle;
+}
+
+.answer_placeholder input {
+    appearance: none;
+    border-style: dotted;
+    border-width: 1px;
+    background-color:rgba(25, 25, 112, 0.35);
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+}
+
+.answer_placeholder input:checked {
+    background-color: rgba(220, 220, 255, 0.3);
+}
+
+label {
+    width: 100%;
+    padding-left: 3%;
+    font-size: 2.5vw;
+}
+
+.hidden_layout {
+    background-color: azure;
+}
+
+.hidden_buttoms {
+    width: 30%;
+    height: 4vw;
+    font-size: 2.5vw;
+}
+
+#notifications {
+    width: 100%;
+    font-size: 2.5vw;
+}
+
+/*auxiliar classes*/
+input[class="wright_choice"]:checked, input[class="wright_choice"] {
+    background-color: rgba(153, 205, 50, 0.3);
+}
+
+input[class="wrong_choice"]:checked {
+    background-color: rgba(211, 0, 0, 0.3);
+}

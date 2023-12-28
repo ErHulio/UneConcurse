@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Une Concurse</title>
+    <link rel="stylesheet" href="concurse_style.css">
+    <meta charset="utf-8">
+</head>
+
+<body id="layout">
+    <form action="" method="POST">
+        <section id="visible_layout">
+            <section id="visual_aid">
+                <!--Elements and visual aid-->
+            </section>
+            <section id="qna">
+                <p id="question_placeholder"><!--Question n:--></p>
+                <div id="answers_top_division">
+                    <div class="answer_placeholder" id="top_one">
+                        <input id="a_choice" type="radio" name="answer" value="A">
+                        <label for="a_choice"><!--option A--></label>
+                    </div>
+                    <div class="answer_placeholder" id="top_two">
+                        <input id="b_choice" type="radio" name="answer" value="B">
+                        <label for="b_choice"><!--option B--></label>
+                    </div>
+                </div>
+                <div id="answers_bottom_division">
+                    <div class="answer_placeholder" id="bottom_one">
+                        <input id="c_choice" type="radio" name="answer" value="C">
+                        <label for="c_choice"><!--option C--></label>
+                    </div>
+                    <div class="answer_placeholder" id="bottom_two">
+                        <input id="d_choice" type="radio" name="answer" value="D">
+                        <label for="d_choice"><!--option D--></label>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="hidden_layout">
+            <input class="hidden_buttoms" id="submit" type="submit" value="Submit">
+        </section>
+    </form>
+    <section class="hidden_layout">
+        <button class="hidden_buttoms" id="deselect">Deselect all</button>
+        <button class="hidden_buttoms" id="next" disabled="true">Next question</button>
+        <p id="notifications"></p>
+    </section>
+    
+</body>
+
+</html>
+<script src="concurse_script.js"></script>
