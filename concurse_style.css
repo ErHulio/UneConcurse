@@ -8,20 +8,64 @@
     height: 69%;
 }
 
+#wildcards {
+    width: 100%;
+    height: 13%;
+    display: flex;
+    justify-content: end;
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
+.wildcard_placeholder {
+    margin: 0.5vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    position: relative;
+    width: 3vw;
+    height: 3vw;
+}
+
+.wildcard_placeholder * {
+    width: 3vw;
+    height: 3vw;
+    appearance: none;
+    border-radius: 50%;
+}
+
+.wildcard_placeholder input {
+    margin: 0%;
+    background-color: rgba(130, 225, 225, 0.9);
+}
+
+.wildcard_placeholder input:checked {
+    background-color: rgba(0, 139, 139, 0.9);
+}
+
+.wildcard_placeholder label {
+    font-size: 2vw;
+    text-align: center;
+    position: absolute;
+    left: -3%;
+}
+
 #qna {
     background-color: rgba(0, 139, 139, 0.9);
     height: 30%;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2vw 2vw 1vw 1vw;
 }
 
 #question_placeholder {
     width: inherit;
     height: 30%;
-    /*line-height: 180%;*/
     font-size: 2.2vw;
     margin: 0%;
+    padding-top: 0.5%;
     padding-left: 1.5%;
-    border-style: dashed;
-    border-width: 1px;
 }
 
 #answers_top_division, #answers_bottom_division {
@@ -46,8 +90,6 @@
 
 .answer_placeholder input {
     appearance: none;
-    border-style: dotted;
-    border-width: 1px;
     background-color:rgba(25, 25, 112, 0.35);
     width: 100%;
     height: 100%;
@@ -58,10 +100,30 @@
     background-color: rgba(220, 220, 255, 0.3);
 }
 
+#placeholder_public {
+    margin-right: 1vw;
+}
+
 label {
     width: 100%;
     padding-left: 3%;
     font-size: 2vw;
+}
+
+#a_choice {
+    border-radius: 1.5vw 0.7vw 0 0.7vw;
+}
+
+#b_choice {
+    border-radius: 0.7vw 1.5vw 0.7vw 0;
+}
+
+#c_choice {
+    border-radius: 0.7vw 0 0.7vw 1.5vw;
+}
+
+#d_choice {
+    border-radius: 0 0.7vw 1.5vw 0.7vw;
 }
 
 .hidden_layout {
